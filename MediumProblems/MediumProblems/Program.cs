@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MediumProblems
 {
@@ -10,26 +6,27 @@ namespace MediumProblems
     {
         static void Main(string[] args)
         {
+            //needs to update unit tests
             var node1 = new ListNode(7);
-            var node3 = new ListNode(3);
             var node2 = new ListNode(9);
+            var node3 = new ListNode(3);
             node1.next = node2;
             node2.next = node3;
 
-            var node1a = new ListNode(5);
-            var node3a = new ListNode(5);
-            var node2a = new ListNode(6);
-            node1a.next = node2a;
-            node2a.next = node3a;
+            var node1A = new ListNode(5);
+            var node2A = new ListNode(6);
+            var node3A = new ListNode(5);
+            node1A.next = node2A;
+            node2A.next = node3A;
 
             var sol = new Solution();
-            var res = sol.AddTwoNumbers(node1, node1a);
+            var res = sol.AddTwoNumbers(node1, node1A);
             while (res != null)
             {
                 Console.WriteLine(res.val);
                 res = res.next;
             }
-
+            
             Console.Read();
         }
     }

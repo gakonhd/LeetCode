@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediumProblems", "MediumProblems\MediumProblems.csproj", "{8502B493-6C9F-4EFF-B8C8-17A0F615D0F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZigZagConversion", "ZigZagConversion\ZigZagConversion.csproj", "{4E3E7A87-8956-4AF4-B4D4-84CF08509943}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8502B493-6C9F-4EFF-B8C8-17A0F615D0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8502B493-6C9F-4EFF-B8C8-17A0F615D0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8502B493-6C9F-4EFF-B8C8-17A0F615D0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E3E7A87-8956-4AF4-B4D4-84CF08509943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3E7A87-8956-4AF4-B4D4-84CF08509943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3E7A87-8956-4AF4-B4D4-84CF08509943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3E7A87-8956-4AF4-B4D4-84CF08509943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
