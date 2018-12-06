@@ -12,10 +12,8 @@ namespace ZigZagConversion
         {
 
             //Console.WriteLine(Convert("PAYPALISHIRING", 3).Equals("PAHNAPLSIIGYIR"));
-            Console.WriteLine(Convert("A", 2));
+            Console.WriteLine(Convert("PAYPALISHIRING", 4));
             Console.ReadKey();
-
-
         }
 
         public static string Convert(string s, int numRows)
@@ -32,17 +30,36 @@ namespace ZigZagConversion
                 var right = distance - left;
                 var latest = i;
                 var check = (left != 0) ? left : right;
-                while (latest + check < arr.Length)
+                var flippedLeft = true;
+                var flippedRight = true;
+                var falseCheck = 0;
+
+                while (latest + check < arr.Length && falseCheck != 2)
                 {
-                    if (latest + left < arr.Length && left != 0)
+                    falseCheck = 2;
+                    if (latest + left < arr.Length && left != 0 && flippedLeft)
                     {
                         builder.Append(arr[latest + left]);
                         latest = latest + left;
+                        if (right != 0)
+                        {
+                            flippedRight = true;
+                            flippedLeft = false;
+                        }
+
+                        falseCheck--;
                     }
-                    if (latest + right < arr.Length && right != 0)
+
+                    if (latest + right < arr.Length && right != 0 && flippedRight)
                     {
                         builder.Append(arr[latest + right]);
                         latest = latest + right;
+                        if (left != 0)
+                        {
+                            flippedLeft = true;
+                            flippedRight = false;
+                        }
+                        falseCheck--;
                     }
                 }
             }
