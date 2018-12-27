@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZigZagConversion", "ZigZagC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubString", "LongestSubString\LongestSubString.csproj", "{EB4B12DA-FCCB-4500-BB85-FB2AB069651E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATOI", "ATOI\ATOI.csproj", "{673BA5C2-5C62-4D90-BABF-B6C25ACE7A05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EB4B12DA-FCCB-4500-BB85-FB2AB069651E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB4B12DA-FCCB-4500-BB85-FB2AB069651E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB4B12DA-FCCB-4500-BB85-FB2AB069651E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673BA5C2-5C62-4D90-BABF-B6C25ACE7A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673BA5C2-5C62-4D90-BABF-B6C25ACE7A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673BA5C2-5C62-4D90-BABF-B6C25ACE7A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673BA5C2-5C62-4D90-BABF-B6C25ACE7A05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
